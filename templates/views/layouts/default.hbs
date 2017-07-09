@@ -30,10 +30,10 @@
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
-							<a href="/" class="navbar-brand"><img src="http://humanbrainbox.com/sites/default/files/hbb_website_logo_2016_is_back_ground_0.png" width="180px" height="32.5px"></a>
+							<a href="/" class="navbar-brand">HumanBrainBox</a>
 						</div>
 						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-right">
+							<ul class="nav navbar-nav navbar-left">
 									{{# each navLinks}}
 									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 										<a href="{{ href }}">{{ label }}</a>
@@ -86,7 +86,7 @@
 		</div>
 		<div class="container">
 			<div id="footer">
-				
+				<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
 			</div>
 		</div>
 		{{!--
