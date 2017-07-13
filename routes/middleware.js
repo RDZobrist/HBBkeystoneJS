@@ -17,6 +17,7 @@ var _ = require('lodash');
 	the navigation in the header, you may wish to change this array
 	or replace it with your own templates / logic.
 */
+
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
@@ -24,6 +25,8 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Blog', key: 'blog', href: '/blog' },
 		{ label: 'Gallery', key: 'gallery', href: '/gallery' },
 		{ label: 'Website', key: 'website', href: '/websites' },
+		{ label: 'Try Our Database', key: 'website', href: '/tryDB' },
+		{ label: 'Free Trial', key: 'website', href: '/freeTrial' },
 		{ label: 'Trainings', key: 'trainings', href: '/trainings' },
 		{ label: 'Database', key: 'database', href: '/databases' },
 		{ label: 'Forms', key: 'forms', href: '/forms' },

@@ -1,0 +1,117 @@
+jQuery( document ).ready(function() {
+  //alert('hello');
+    if(jQuery(window).width() < 768){
+      
+    	jQuery( "#featured" ).before( jQuery( ".header-top" ) );
+	}    
+      
+	  jQuery(document).on('scroll', function() {
+      	var scrollPos = jQuery(this).scrollTop();
+
+      	if( scrollPos > 10 ) {
+        	jQuery('.navbar').addClass('navbar-home');
+      	} 
+      	else {
+        	jQuery('.navbar').removeClass('navbar-home');
+      	}
+
+    });
+	// jQuery('#webform-client-form-57 .form-actions').insertAfter(".webform-component--not-a-customer-section--terms");
+	// jQuery('#webform-client-form-57 .form-actions').clone().insertAfter(".webform-component--existing-customer-section--terms-existing-customer");
+
+	jQuery( "#user-register-form #edit-account .password-strength" ).insertAfter( "#edit-pass-pass1" );
+	
+ jQuery("#main-wrapper .pane-views-exp-blog-page .views-exposed-form .views-widget-filter-combine input").attr("placeholder", "Keyword Search Blog");
+ 	/*jQuery('.page-calendar .form-item-edit-field-training-type-tid-all a').addClass('active');*/
+ 
+/* jQuery('body.page-calendar .view-calendar .form-type-select .form-type-bef-link a').on('click', function(){
+    jQuery('body.page-calendar .view-calendar .form-type-select .form-type-bef-link a.active').removeClass('active');
+    jQuery(this).addClass('active');
+});*/
+
+
+jQuery( "#block-user-login > .content #user-login-form" ).insertBefore( jQuery( "#block-system-main .col-md-8 form#user-register-form" ) );
+
+jQuery( ".page-become-website-customer-register #block-user-login" ).insertBefore( jQuery( "#block-system-main .col-md-8 .views-row  form.webform-client-form" ) );
+
+jQuery( "#user-login-form h2" ).insertBefore( jQuery( "#user-login-form .form-item-name" ) );
+
+
+
+jQuery( "body.page-calendar #tabs" ).insertBefore( jQuery( "body.page-calendar .view-calendar .view-filters #edit-field-training-type-tid-wrapper label" ) );
+
+
+/*jQuery( "#webform-client-form-57 .webform-component-radios" ).insertBefore( jQuery( "#webform-client-form-57 fieldset legend.panel-heading" ) );*/
+//append conform email within
+// default fileds of user module 
+jQuery("#user-register-form .form-item-mail").after(jQuery("#user-register-form #edit-field-confirm-e-mail-address"));
+//#edit-field-confirm-e-mail-address
+});
+
+//CHANGE THE VALUE ON CHANGING THE PRODUCT TYPE 
+
+
+// Store our function as a property of Drupal.behaviors.
+Drupal.behaviors.myModuleSecureLink = {
+  attach: function (context, settings) {
+    jQuery("#edit-submitted-product-service").change(function(){
+        setTimeout(function(){
+              jQuery("#free-trial-total-amount").html(jQuery(".monthly-charge:visible").val());
+          }, 500);
+    });
+    jQuery(".monthly-charge").change(function(){
+      jQuery("#free-trial-total-amount").html(jQuery(this).val());
+    });
+  }
+};
+
+
+// (function($){
+
+
+
+//   var SBS = {
+//     parent : 'edit-submitted-product-service',
+//     childs : [
+//       'edit-submitted-monthly-fee-yearly-contract-corporate',
+//       'edit-submitted-monthly-fee-yearly-contract-indivisual',
+//       'edit-submitted-monthly-fee-yearly-contract-sales-agent',
+//       'edit-submitted-monthly-fee-yearly-contract',
+//     ],
+//   };
+
+  
+//   var calculateAmount = function(){
+//     console.log('CALCULATING AMOUNT');
+//       var totalAmount = 0;
+//       var parent = jQuery('#'+SBS.parent);
+//       if ( ['1','2','3','4'].indexOf(parent.val()) > -1 ){
+//         var whichone = SBS.childs.filter(function(item){
+//           var elem = jQuery('#'+item);
+//           return (elem.closest('.form-item').css('display') == 'block');
+//         });
+//         console.log('FOUND SOMETHING', whichone, jQuery('#'+whichone[0]).val());
+//         if(whichone.length){
+//           whichone = whichone[0];
+//           totalAmount = jQuery('#'+whichone).val();
+//         }
+//       }else{
+//         totalAmount = 55444;
+//       }
+//       // set final value to span
+//       jQuery('#free-trial-total-amount').text(totalAmount);
+//   };
+
+//   calculateAmount();
+//   // Assigning event handlers
+//   jQuery('body').on('change', '#'+SBS.parent, calculateAmount);
+
+//   SBS.childs.forEach(function(item){
+//     jQuery('body').on('change', '#'+item, calculateAmount);
+//   });
+
+// })(jQuery);
+
+
+
+

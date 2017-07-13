@@ -1,0 +1,44 @@
+/*(function ($) {
+  Drupal.behaviors.exampleModule = {
+    attach: function (context, settings) {
+      var $container = jQuery(".editablefield-edit");
+      //alert('as');
+
+ jQuery(document).mouseup(function (e) {
+        if (!$container.is(e.target) // if the target of the click isn't the container...
+            && ($container.has(e.target).length === 0) // ... nor a descendant of the container
+            && (e.target != jQuery('html').get(0))) // nor the scrollbar
+        {
+            toolbarClose();
+        }
+    });
+
+ function toolbarClose() {
+    //return jQuery.when(slideOut($container));
+ }
+    }
+  };
+}(jQuery));*/
+
+jQuery( document ).ready(function() {
+	
+	jQuery('body.page-node-add-industry-trainings #edit-submit').val('ADD');
+	jQuery('body.page-node-add-training-section #edit-submit').val('ADD');
+	jQuery('body.page-node-add-training-course #edit-submit').val('ADD');
+	jQuery('body.page-node-add-categories #edit-submit').val('ADD');
+	jQuery('body.page-node-add-best-practices #edit-submit').val('ADD');
+	jQuery('body.page-node-add-tasks #edit-submit').val('ADD');
+	jQuery('body.page-node-add-table-of-contents #edit-submit').val('ADD');
+
+	jQuery('body.page-node-add-training-course #node-edit .field-name-field-basic-text-text p').html('Add New Training Course');
+	jQuery('body.page-node-add-training-section #node-edit .field-name-field-basic-text-text p').html('Add New Training Section');
+	jQuery('body.page-node-add-table-of-contents #node-edit .field-name-field-basic-text-text p').html('Add New Table of Contents');
+	jQuery('body.page-node-add-tasks #node-edit .field-name-field-basic-text-text p').html('Add New Task');
+	jQuery('body.page-node-add-categories #node-edit .field-name-field-basic-text-text p').html('Add New Category');
+	jQuery('body.page-node-add-best-practices #node-edit .field-name-field-basic-text-text p').html('Add New Best Practice');
+
+	jQuery( ".field-name-field-basic-text-text" ).prepend( jQuery( ".field-type-node-reference" ) );
+
+
+
+});
