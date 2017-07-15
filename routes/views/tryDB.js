@@ -7,7 +7,7 @@ exports = module.exports = function (req, res) {
 
 
 	// set locals(navbar pill link on front end)
-	locals.section = 'Try Our Database';
+	locals.section = 'tryDB';
 
 	// load products
 	view.query('tryDB', keystone.list('TryDB').model.find());

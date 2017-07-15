@@ -7,10 +7,10 @@ exports = module.exports = function (req, res) {
 
 
 	// set locals(navbar pill link on front end)
-	locals.section = 'Free Trial';
+	locals.section = 'freeTrial';
 
 	// load products
-	view.query('freeTrial', keystone.list('About').model.find());
+	view.query('freeTrial', keystone.list('FreeTrial').model.find());
 
 	// render the view
 	view.render('freeTrial');

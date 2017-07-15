@@ -10,8 +10,8 @@ exports = module.exports = function (req, res) {
 	locals.section = 'trainings';
 
 	// load products
-	view.query('trainings', keystone.list('trainings').model.find());
+	view.query('trainings', keystone.list('Trainings').model.find());
 
 	// render the view
 	view.render('trainings');
-}
+};
