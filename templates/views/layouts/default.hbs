@@ -26,8 +26,8 @@
 </head>
 
 <body>
-	<div class="container-fluid top-header-conatiner">
-		<div class="row">
+	<div class="container-fluid">
+		
 
 			<nav class="navbar  navbar-inverse navvers navbar-fixed-top" id="navbar-top-section">
 	
@@ -57,27 +57,22 @@
 
 
 
-
-
-
-		<div class="row">
-			<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-								</button>
-			<a href="/" class="navbar-brand"></a>
-		</div>
-		<div class="collapse navbar-collapse">
-			<a href="/"><img class="logo-navbar" src="logo-email.gif"></a>
-			<ul class="nav navbar-nav navbar-right">
+<br>
+<div class="container-fluid">
+	<div class="row">
+	
+			<a href="/"><img class="logo-navbar" src="homepage_logo.png"></a>
+			<ul class="nav nav-pills">
 				{{# each navLinks}}
-				<li {{#ifeq ../section key}}class="active col-xs-1 nav-item" {{else}}{{/ifeq}}>
-					<a href="{{ href }}">{{ label }}</a>
+				
+				
+				<li {{#ifeq ../section key}} {{else}}{{/ifeq}}>
+					<a href="{{ href }}" class="middle-nav-links col-md-1 custom">{{ label }}</a>
 				</li>
 				{{/each}}
 			</ul>
 
-
+</div>
 		</div>
 	</div>
 
