@@ -66,8 +66,8 @@
 				{{# each navLinks}}
 				
 				
-				<li {{#ifeq ../section key}} {{else}}{{/ifeq}}>
-					<a href="{{ href }}" class="middle-nav-links col-md-1 custom">{{ label }}</a>
+				<li class="custom_pill" {{#ifeq ../section key}} {{else}}{{/ifeq}}>
+					<a href="{{ href }}" class="middle-nav-links">{{ label }}</a>
 				</li>
 				{{/each}}
 			</ul>
