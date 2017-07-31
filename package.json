@@ -19,6 +19,6 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node hbb.js"
+    "start": "node server.js"
   }
 }
