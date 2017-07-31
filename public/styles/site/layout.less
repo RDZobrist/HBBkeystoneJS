@@ -20,7 +20,10 @@
 
 .slogan  {
 	display: block;
-	padding-top:22vh;
+	line-height: 1.5;
+
+	padding-top:20vh;
+	font-size:30px
 }
 
 .logo-navbar  {
@@ -38,6 +41,23 @@ ul.navbar-nav.active.blueBar{
 
 }
 
+.btn.btn-ghost,
+.btn.btn-full{
+	color:#fff;
+	border: 2px solid #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	min-width: 220px;
+	padding: 7px 0;
+	position: relative;
+	text-decoration: none;
+	vertical-align: top;
+}
+.btn.btn-ghost:hover,
+.btn.btn-full:hover{
+	background-color: @background-color-nav;
+}
 
 
 
@@ -54,7 +74,9 @@ ul.navbar-nav.active.blueBar{
 
 	
 }
-
+.nav-pills>li>a{
+	color:black;
+}
 .nav-pills>li>a:hover {
 	background-color: @background-color-nav;
 	color:#fff;
