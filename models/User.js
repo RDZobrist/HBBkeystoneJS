@@ -20,7 +20,7 @@ User.schema.virtual('canAccessKeystone').get(function () {
 	return this.isAdmin;
 });
 
-new Schema({..}, { autoIndex: false });
+
 /**
  * Relationships
  */
