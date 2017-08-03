@@ -9,11 +9,12 @@
 	<title>HumanBrainBox</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link href="/styles/site.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="../../../public/css/bootstrap-4/css/bootstrap.min.css">
+	<!--CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Font Awesome CDN -->
 	<script src="https://use.fontawesome.com/19a6013401.js"></script>
-	<!-- link to IonIcons minified css -->
-	<link rel="stylesheet" href="../openSource-resources/css/ionicons.min.css">
+
+
 	<!-- google fonts (Lato) -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet"> {{!-- This file provides the default styling for the KeystoneJS Content Editor - only renders when user is logged in and
 	admin--}} {{{isAdminEditorCSS user}}} {{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries //-
@@ -26,100 +27,143 @@
 </head>
 
 <body>
-	<div class="container-fluid">
-		
 
-			<nav class="navbar  navbar-inverse navvers navbar-fixed-top" id="navbar-top-section">
+	<nav class="navbar navbar-inverse navvers navbar-static-top" id="navbar-top-section">
+		<div class="container-fluid">
+			<span class="navbar-text">Customer Service: <strong>801-930-0396</strong></span>
+
+			<ul class="navbar-nav active blueBar" style="list-style: none">
+				<li class="nav-item active">
+					<a class="nav-link header-link" href="/tryDB">Try Our Database <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active ">
+					<a class="nav-link header-link" href="/freeTrial">Free Trial</a>
+				</li>
+				{{#if user}}
+				<li class="nav-item active header-link"><a href="/keystone/signout" class="nav-link inline-right"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
+				{{else}}
+				<li class="nav-item active header-link"><a href="/keystone/signin" class="nav-link inline-right"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+				{{/if}}
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+	<!-- Page Header -->
 	
-					
-				<span class="navbar-text">Customer Service: 801-930-0396</span>
-				<ul class="navbar-nav active blueBar" style="list-style: none">
-			
-					
-					<li class="nav-item active">
-						<a class="nav-link header-link" href="/tryDB">Try Our Database <span class="sr-only">(current)</span></a>
+	<header class="navbar nav">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="container-fluid">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span style="visibility: hidden">Toggle navigation</span>
+          <span class="icon-bar" aria-hidden="true"></span>
+          <span class="icon-bar" aria-hidden="true"></span>
+          <span class="icon-bar" aria-hidden="true"></span>
+        </button>
+				<div class='brand navbar-brand'>
+					<a href="/" title="Home" rel="home" id="logo">
+              <img src="http://humanbrainbox.com/sites/default/files/hbb_website_logo_2016_is_back_ground_0.png" alt="Home" />
+            </a>
+				</div>
+				<div id="site-name-slogan" class="brand navbar-brand ">
+					<h1 id="site-name" class="element-invisible">
+
+
+				</div>
+				<!-- /#name-and-slogan -->
+			</div>
+			<!-- /.navbar-header -->
+</div>
+<div class="container">
+				<nav class="collapse navbar-collapse toggle-navv" role="navigation">
+				<h2 class="element-invisible" style="visibility: hidden">Main menu</h2>
+				<ul class="nav navbar-nav links" role="menubar">
+					<li role="presentation"><a href="/tryDB"class="first leaf"><i class="fa fa-database" aria-hidden="true"></i>DATABASE</a></li>
+					<li role="presentation"><a href="/websites" title="" class="leaf" role="menuitem"><i class="fa fa-leaf" aria-hidden="true"></i>WEBSITES</a></li>
+					<li  role="presentation"><a href="/trainings" title="" class="leaf" role="menuitem"><i class="fa fa-compass" aria-hidden="true"></i>
+TRAININGS</a></li>
+					<li  role="presentation"><a href="/community" title="" class="leaf" role="menuitem"><i class="fa fa-crosshairs" aria-hidden="true"></i>
+COMMUNITY</a></li>
+					<li  role="presentation"><a href="/blog" class="leaf" role="menuitem"><i class="fa fa-comment" aria-hidden="true"></i>
+BLOG</a></li>
+					<li  role="presentation"><a href="/about" class="leaf" ><i class="fa fa-life-ring" aria-hidden="true"></i>
+ABOUT</a></li>
+					<li class="dropdown" role="presentation"><a href="#" class="leaf dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+FORMS<span class="caret"></span></a>
+						<span style="visibility: hidden">Toggle submenu for FORMS</span>
+							</a>
+							<ul class="dropdown-menu"  aria-labelledby="dLabel"role="menu">
+								<li role="presentation" ><a href="/request-free-demo" title="" class="first leaf" role="menuitem">Request a Free Demo</a></li>
+								<li role="presentation"><a href="/start-my-free-trial" title="" class="leaf" role="menuitem">Database 30 Day Free Trial</a></li>
+								<li role="presentation"><a href="/start-my-free-trial" title="" class="leaf" role="menuitem">Database 30 Day Free Trial</a></li>
+								<li  role="presentation"><a href="/pro-member-trial" title="" class="leaf" role="menuitem">5 Day Pro Member Trial</a></li>
+								<li  role="presentation"><a href="/sem-community-members/register" title="" class="leaf" role="menuitem">Become a Free Member</a></li>
+								<li role="presentation"><a href="/industry-leader/register" title="" class="leaf" role="menuitem">Become a Industry Leader	</a></li>
+								<li role="presentation"><a href="/mastermind-leader/register" title="" class="leaf" role="menuitem">Become a Mastermind Leader</a></li>
+								<li class="dropdown" role="presentation"><a href="/become-website-customer/register" title="" class="last leaf" role="menuitem">Become a Website Customer</a></li>
+							</ul>
 					</li>
-					<li class="nav-item active ">
-						<a class="nav-link header-link" href="/freeTrial">Free Trial</a>
-					</li>
-					{{#if user}}
-					<li class="nav-item active header-link"><a href="/keystone/signout" class="nav-link inline-right"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
-					{{else}}
-					<li class="nav-item active header-link"><a href="/keystone/signin" class="nav-link inline-right"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-					{{/if}}
+
+					<li role="presentation"><a href="/contact" title="" class="last leaf" role="menuitem"><i class="fa fa-phone" aria-hidden="true"></i>
+CONTACT</a></li>
 				</ul>
-				</div>
-				{{!-- end / +++navbar-header container   --}}
-				</div>
 
 			</nav>
-		</div>
+			
 
-
-
-<br>
-<div class="container-fluid">
-	<div class="row">
-	
-			<a href="/"><img class="logo-navbar" src="homepage_logo.png"></a>
-			<ul class="nav nav-pills inline-right">
-				{{# each navLinks}}
-				
-				
-				<li class="custom_pill" {{#ifeq ../section key}} {{else}}{{/ifeq}}>
-					<a href="{{ href }}" class="middle-nav-links">{{ label }}</a>
-				</li>
-				{{/each}}
-			</ul>
-
+</header>
 </div>
-		</div>
-	</div>
+</div>
 
 
-	</div>
-	<div id="body">
-		<!--
+		
+		<div id="body">
+			<!--
 					Flash messages allow you to display once-off status messages to users, e.g. form
 					validation errors, success messages, etc
 				-->
 
-		{{#if messages}}
-		<div id="flash-messages" class="container">
-			{{#if messages.info}}
-			<div class="alert alert-info">
-				{{{flashMessages messages.info}}}
-			</div>
-			{{/if}} {{#if messages.success}}
-			<div class="alert alert-success">
-				{{{flashMessages messages.success}}}
-			</div>
-			{{/if}} {{#if messages.warning}}
-			<div class="alert alert-warning">
-				{{{flashMessages messages.warning}}}
-			</div>
-			{{/if}} {{#if messages.error}}
-			<div class="alert alert-danger">
-				{{{flashMessages messages.error}}}
+			{{#if messages}}
+			<div id="flash-messages" class="container">
+				{{#if messages.info}}
+				<div class="alert alert-info">
+					{{{flashMessages messages.info}}}
+				</div>
+				{{/if}} {{#if messages.success}}
+				<div class="alert alert-success">
+					{{{flashMessages messages.success}}}
+				</div>
+				{{/if}} {{#if messages.warning}}
+				<div class="alert alert-warning">
+					{{{flashMessages messages.warning}}}
+				</div>
+				{{/if}} {{#if messages.error}}
+				<div class="alert alert-danger">
+					{{{flashMessages messages.error}}}
+				</div>
+				{{/if}}
 			</div>
 			{{/if}}
+			<!-- The content block should contain the body of your template's content-->
+			{{{body}}}
 		</div>
-		{{/if}}
-		<!-- The content block should contain the body of your template's content-->
-		{{{body}}}
-	</div>
-	<div class="container">
-		<div id="footer">
-			<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+		<div class="container">
+			<div id="footer">
+				<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+			</div>
 		</div>
-	</div>
-	{{!-- //- jQuery 1.11.3 is included by default, and required by both Bootstrap //- and the KeystoneJS Content Editor. If
-	you are not targeting IE8, //- you can upgrade to 2.1.4 (also bundled) for better performance. --}}
-	<script src="/js/jquery/jquery-1.11.3.min.js"></script>
-	{{!-- //- Customise which Bootstrap javascript files are served by including //- them specifically here, instead of bootstrap-3.3.5.min.js
-	--}}
-	<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
-	{{{isAdminEditorJS user}}}
+		{{!-- //- jQuery 1.11.3 is included by default, and required by both Bootstrap //- and the KeystoneJS Content Editor. If
+		you are not targeting IE8, //- you can upgrade to 2.1.4 (also bundled) for better performance. --}}
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		
+		<!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">      </script>    
+		{{!-- //- Customise which Bootstrap javascript files are served by including //- them specifically here, instead of bootstrap-3.3.5.min.js
+		--}} {{{isAdminEditorJS user}}}
 </body>
 
 </html>
