@@ -3,7 +3,7 @@ const Types = keystone.Field.Types;
 
 
 // Website model
-const Trainings = new keystone.List('trainings', {
+const Trainings = new keystone.List('Trainings', {
      autokey: { path: 'slug', from: 'title', unique: true }
 });
 
