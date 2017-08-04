@@ -20,7 +20,7 @@
 .slogan  {
 	display: block;
 	line-height: 1.5;
-
+	position: relative;
 	padding-top:20vh;
 	font-size:30px
 }
@@ -72,14 +72,15 @@ div.container.links-header{
 
 
  div.container-fluid.home-image  {
-	background-image:linear-gradient(rgba(1,.4,0,.4),rgba(.5,1,0,.75)), url('../../images/home_page_1.jpeg');
-	height: 55vh;
+	background-image:linear-gradient(rgba(1,.4,0,.59),rgba(.5,1,0,.78)), url('../../images/home_page_1.jpeg');
+	height: 65vh;
 	background-size: cover;
 	background-position: center;
 	color:@font-color-nav;
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
+	z-index: -1;
 	
 
 	
@@ -138,7 +139,7 @@ nav.collapse.navbar-collapse.toggle-navv{
 
 div.container-fluid.home-image {
 	margin-bottom: 0px;
-	border-top: 3px solid black;
+	border-top: 6px solid black;
 }
 
 li.dropdown  {
@@ -154,47 +155,71 @@ header.navbar.navbar-default  {
 
 ul.nav.navbar-nav.links  {
 	margin-bottom: -80px;
-	padding: 12px 0px 0px 0px;
 	color: black;
 
 }
 
+
+
 a{
 	color:black;
 	margin:0px;
-	padding: 5px;
-	float: right;
+	padding: 0px 10px;
 	font-weight: 200;
 
 }
-
-
-.first.leaf  {
-	// margin-left: 160px;
+ul.dropdown-menu  {
+	position: absolute;
+	top: 140%;
+	// height: fit-content;
+	background-color: #fff;
 }
 
+ul.dropdown-menu li {
+	background-color: #fff;
+	z-index: 1;
+	padding: 10px;
+	vertical-align: middle;
+	position: relative;
+}
+.navbar-nav {
+	margin: 0px;
+}
 
+.leaf.com  {
+	margin-right: 5px;
+}
+a.leafsub  {
+	z-index: 1000;
+	background-color: #fff;
+	width: fit-content;
+	height: fit-content;
+	padding: 2px;
+	margin: 0px;
+}
+a.leafsub.demo{
+	text-indent: -5em;
+}
+ul.navbar-nav.links li{
+
+	width: 8.35%;
+    display: block;
+    padding: .55em .9em;
+    margin-top: -60px;
+    height: 100%;
+    font-weight: 200;
+    text-rendering: optimizeLegibility
+}
 ul.navbar-nav.links li:first-child{
 	margin-left: 30%;
 }
 
 
 
-
-ul.navbar-nav.links li  {
-width: 8.75%;
-	display: block;
-	padding: 2px;
-	margin-top: -60px;
-	height:100%;
-	font-weight: 200;
-	text-rendering: optimizeLegibility;
-	
-	
-}
-ul.navbar-nav.links li:hover  {
+ul.navbar-nav.links li:hover a:hover  {
 	color: #ffffff;
-	background-color: @background-color-nav;
+	width: fit-content;
+	background-color: @background-color-nav !important;
 }
 
 div.brand.navbar-brand  {
