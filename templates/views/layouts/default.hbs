@@ -27,94 +27,98 @@
 </head>
 
 <body>
+	<div class="header-top">
+		<div class="container">
+			<div class="header-top-left col-sm-6">
+				<div class="region region-header-top-left">
+					<div id="block-block-9" class="block block-block">
 
-	<nav class="navbar navbar-inverse navbar-static-top" id="navbar-top-section">
-		<div class="top-header">
-			<span class="navbar-text fix">Customer Service: <strong>801-930-0395</strong></span>
 
-			<ul class="navbar-nav active blueBar pull-right" style="list-style: none">
-				<li class="nav-item active">
-					<a class="nav-link header-link navbar-text" href="/tryDB">Try Our Database <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item active blue-link">
-					<a class=" nav-link header-link navbar-text" href="/freeTrial">Free Trial</a>
-				</li>
-				{{#if user}}
-				<li class="nav-item active"><a href="/keystone/signout" class="nav-link header-link navbar-text"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
-				{{else}}
-				<li class="nav-item active"><a href="/keystone/signin" class="nav-link header-link navbar-text"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-				{{/if}}
-			</ul>
+						<div class="content">
+							<div class="section contact-us"><strong>CUSTOMER SERVICE: &nbsp;</strong>801-930-0396</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-top-right col-sm-6">
+				<div class="region region-header-top-right">
+					<div id="block-menu-menu-header-menu" class="block block-menu">
+
+
+						<div class="content">
+							<ul class="menu clearfix" role="menu">
+								<li class="first leaf" role="presentation"><a href="/database-management-system" title="" role="menuitem">Try Our Database</a></li>
+								<li class="leaf" role="presentation"><a href="/start-my-free-trial" title="" role="menuitem">Free Trial</a></li>
+
+								{{#if user}}
+								<li class="last leaf" role="presentation"><a href="/keystone/signout" role="menuitem"></i>Sign Out</a></li>
+								{{else}}
+								<li class="last leaf" role="presentation"><a href="/keystone/signin" role="menuitem">Sign In</a></li>
+								{{/if}}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
+	</div>
 	</nav>
 
 
-
-
-	<!-- Page Header -->
-	<header class="navbar nav">
-
-
-		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span style="visibility:hidden">Toggle navigation</span>
           <span class="icon-bar" aria-hidden="true"></span>
-          <span class="icon-bar" aria-hidden="true"></spanr>
-          <span class="icon-bar" aria-hidden="true"></span>
-		   <span class="icon-bar" aria-hidden="true"></span>
-          <span class="icon-bar" aria-hidden="true"></span>
-          <span class="icon-bar" aria-hidden="true"></span>
-		   <span class="icon-bar" aria-hidden="true"></span>
           <span class="icon-bar" aria-hidden="true"></span>
           <span class="icon-bar" aria-hidden="true"></span>
         </button>
-		<div class='brand navbar-brand'>
-			<a href="/" title="Home" rel="home" id="logo">
-              <img src="http://humanbrainbox.com/sites/default/files/hbb_website_logo_2016_is_back_ground_0.png" alt="Home" />
+			<div class="brand navbar-brand">
+				<a href="/" title="Home" rel="home" id="logo">
+              <img src="http://humanbrainbox.com/sites/default/files/hbb_website_logo_2016_is_back_ground_0.png" alt="Home">
             </a>
+			</div>
+			<div id="site-name-slogan" class="brand navbar-brand ">
+				<h1 id="site-name" style="visibility: hidden">
+					<strong>
+                  <a href="/" title="Home" rel="home"><span>Human Brain Box</span></a>
+                </strong>
+				</h1>
+
+			</div>
+			<!-- /#name-and-slogan -->
 		</div>
+		<!-- /.navbar-header -->
 
+		<nav class="collapse navbar-collapse " role="navigation">
+			<h2 style="visibility: hidden">Main menu</h2>
+			<ul class="nav navbar-nav links clearfix" role="menubar">
+				<li class="mid-1442 first" role="presentation"><a href="/tryDB" class="first leaf" role="menuitem">DATABASE</a></li>
+				<li class="mid-1443" role="presentation"><a href="/websites" title="" class="leaf" role="menuitem">WEBSITES</a></li>
+				<li class="mid-1444" role="presentation"><a href="/trainings" title="" class="leaf" role="menuitem">TRAININGS</a></li>
+				<li class="mid-1445" role="presentation"><a href="/community" title="" class="leaf" role="menuitem">COMMUNITY</a></li>
+				<li class="mid-1764" role="presentation"><a href="/blog" class="leaf" role="menuitem">BLOG</a></li>
+				<li class="mid-1464" role="presentation"><a href="/about" class="leaf" role="menuitem">ABOUT</a></li>
+				<li class="mid-1465 dropdown clearfix" role="presentation"><span title="" class="expanded nolink" role="button" id="main-menu-dropdown-7" data-toggle="dropdown" aria-haspopup="true">FORMS<span class="caret" aria-hidden="true"></span></span>
+					<span style="visibility: hidden">Toggle submenu for FORMS</span>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="main-menu-dropdown-7" aria-expanded="false">
+							<li class="mid-1557 first" role="presentation"><a href="/request-free-demo" title="" class="first leaf" role="menuitem">Request a Free Demo</a></li>
+							<li class="mid-1553" role="presentation"><a href="/start-my-free-trial" title="" class="leaf" role="menuitem">Database 30 Day Free Trial</a></li>
+							<li class="mid-1558" role="presentation"><a href="/pro-member-trial" title="" class="leaf" role="menuitem">5 Day Pro Member Trial</a></li>
+							<li class="mid-1560" role="presentation"><a href="/sem-community-members/register" title="" class="leaf" role="menuitem">Become a Free Member</a></li>
+							<li class="mid-2047" role="presentation"><a href="/industry-leader/register" title="" class="leaf" role="menuitem">Become a Industry Leader	</a></li>
+							<li class="mid-2057" role="presentation"><a href="/mastermind-leader/register" title="" class="leaf" role="menuitem">Become a Mastermind Leader</a></li>
+							<li class="mid-2301 last" role="presentation"><a href="/become-website-customer/register" title="" class="last leaf" role="menuitem">Become a Website Customer</a></li>
+						</ul>
+				</li>
+				<div class="clearfix visible-xs"></div>
+				<li class="mid-1447 last" role="presentation"><a href="/contact" title="" class="last leaf" role="menuitem">CONTACT</a></li>
+			</ul>
 
-
-		<nav class="collapse navbar-collapse toggle-navv " role="navigation">
-
-			
-			<ul class="nav navbar-nav links pull-right" role="menubar">
-					<li role="presentation" class="leaf"><a href="/tryDB"><i class="fa fa-database" aria-hidden="true"></i>DATABASE</li></a>
-						<li role="presentation" class="leaf"><a href="/websites" title="" role="menuitem"><i class="fa fa-leaf" aria-hidden="true"></i>WEBSITES</a></li>
-						<li role="presentation" class="leaf com"><a href="/community" title="" role="menuitem"><i class="fa fa-crosshairs" aria-hidden="true"></i>COMMUNITY</a></li>
-
-						<li role="presentation" class="leaf"><a href="/trainings" title="" role="menuitem"><i class="fa fa-compass" aria-hidden="true"></i>TRAININGS</a></li>
-
-						<li role="presentation" class="leaf about"><a href="/about"><i class="fa fa-life-ring text-center" aria-hidden="true"></i>ABOUT</a></li>
-
-						<li class="dropdown" role="presentation"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>FORMS<span class="caret"></span></a>
-
-							<span style="visibility: hidden">Toggle submenu for FORMS</span>
-
-							<ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
-								<li role="presentation"><a href="/request-free-demo" title="" class="leafsub demo" role="menuitem">Request a Free Demo</a></li>
-								<li role="presentation"><a href="/start-my-free-trial" title="" class="leafsub" role="menuitem">Database 30 Day Free Trial</a></li>
-								<li role="presentation"><a href="/start-my-free-trial" title="" class="leafsub" role="menuitem">Database 30 Day Free Trial</a></li>
-								<li role="presentation"><a href="/pro-member-trial" title="" class="leafsub" role="menuitem">5 Day Pro Member Trial</a></li>
-								<li role="presentation"><a href="/sem-community-members/register" title="" class="leafsub" role="menuitem">Become a Free Member</a></li>
-								<li role="presentation"><a href="/industry-leader/register" title="" class="leafsub" role="menuitem">Become a Industry Leader	</a></li>
-								<li role="presentation"><a href="/mastermind-leader/register" title="" class="leafsub" role="menuitem">Become a Mastermind Leader</a></li>
-								<li class="dropdown" role="presentation"><a href="/become-website-customer/register" title="" class="leafsub" role="menuitem">Become a Website Customer</a></li>
-							</ul>
-						</li>
-						<li role="presentation" class="leaf"><a href="/blog" role="menuitem"><i class="fa fa-comment text-center" aria-hidden="true"></i>BLOG</a></li>
-
-						<li role="presentation" class="last leaf"><a href="/contact" title="" role="menuitem"><i class="fa fa-phone" aria-hidden="true"></i>CONTACT</a></li>
-
-					
-				</ul>
-		
 		</nav>
 
-
-
-	</header>
-
+	</div>
 
 
 
