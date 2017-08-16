@@ -46,6 +46,15 @@ exports = module.exports = function (app) {
 	app.get('/about', routes.views.about);
 	app.get('/websites', routes.views.websites);
 	app.get('/forms', routes.views.forms);
+	app.get('/become-website-customer', routes.views.become_website_customer);
+	app.get('/request-free-demo', routes.views.request_free_demo);
+	app.get('/industry-leader', routes.views.industry_leader);
+	app.get('/start-my-free-trial', routes.views.start_my_free_trial);
+	app.get('/pro-member-trial', routes.views.pro_member_trial);
+	app.get('/become-free-member', routes.views.become_free_member);
+	app.get('/mastermind-leader', routes.views.mastermind_leader);
+
+	// app.get('/sem-community-members', routes.views.sem_community_members);
 
 	app.all('/contact', routes.views.contact);
 

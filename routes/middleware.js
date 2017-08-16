@@ -33,6 +33,18 @@ exports.initLocals = function(req, res, next) {
             { label: 'Forms', key: 'forms', href: '/forms' },
             { label: 'Community', key: 'community', href: '/community' },
             { label: 'Contact', key: 'contact', href: '/contact' },
+            { label: 'Request Free Demo', key: 'request-free-demo', href: '/request-free-demo' },
+            { label: 'Become an Industry Leader', key: 'industry-leader', href: '/industry-leader' },
+            { label: 'Start My Free Trial', key: 'start-my-free-trial', href: '/start-my-free-trial' },
+            { label: 'Become Website Customer', key: 'become-website-customer', href: '/become-website-customer' },
+            { label: '5 Day Pro Member Trial', key: 'pro-member-trial', href: '/pro-member-trial' },
+            { label: 'Become Free Member', key: 'become-free-member', href: '/become-free-member' },
+             { label: 'Become a Mastermind Leader', key: 'mastermind-leader', href: '/mastermind-leader' },
+
+
+
+            // { label: 'Contact', key: 'contact', href: '/contact' },
+
 
         ];
         res.locals.user = req.user;
